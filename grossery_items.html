@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="bs_v1.js"></script>
+
+    <style>
+        html,
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container-fluid">
+        <!--upper row-->
+        <div class="row bg-primary justify-content-between text-light align-items-center" style="height: 70px;">
+            <div class="clo-6 m-1">
+                My Project
+            </div>
+            <div class="col-6 m-1 d-flex justify-content-end">
+                Logout
+            </div>
+        </div>
+
+        <!--second row-->
+        <div class="row m-1 justify-content-center" style="height: 300px;">
+            <div class="col-12 col-md-6 rounded bg-primary">
+                <div class="row text-light m-1 font-weight-bold justify-content-center align-items-center"
+                    style="font-size: 32px; ">
+                    Add Groccery Items
+                </div>
+                <div class="row m-3 justify-content-center">
+                    <input type="text" id="inputId" class="form-contol-lg" placeholder="Add items here"
+                        style="border: none; background: transparent; outline: none; border-bottom: 1px solid black; height: 60px; width: 500px;">
+                </div>
+                <div class="row m-3 mt-5 justify-content-center">
+                    <button id="btnSubmit" class="btn btn-outline-warning text-light" style="width: 300px;"
+                        onclick="submitItem()">
+                        Submit Here
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--third row-->
+        <div class="row m-1 justify-content-center" style="height: 100px;">
+            <div class="col-12 col-md-6 rounded bg-secondary">
+                <div class="row text-primary m-1 font-weight-bold justify-content-center " style="font-size: 32px; ">
+                    Groccery Items
+                </div>
+                <!--add items row-->
+                <div class="row  justify-content-center">
+                    <div id="itemBox" style="visibility: hidden;">
+                        <div id="refItemId" style="display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                Sample Item
+                            </div>
+
+                            <button class="btn text-primary btn-outline-warning ml-4 mb-1" onclick="removeItem(this)">
+                                remove
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="row m-3 mt-5 justify-content-center">
+                    <button id="btnSubmit" class="btn btn-outline-warning text-primary" style="width: 300px;"
+                        onclick="clearItem()">
+                        Clear Items
+                    </button>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
