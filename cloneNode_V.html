@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="assign.js"></script>
+</head>
+
+<body>
+    <div style="display: flex; flex-direction: column; background-color: grey; height: 100vh;">
+
+        <div style="flex:0.5; background-color: rgb(218, 122, 122); display: flex;  justify-content: space-between; ">
+            <div>
+                HOme
+            </div>
+            <div>
+                About us
+            </div>
+            <div>
+                Sign up
+            </div>
+
+        </div>
+        <div
+            style="flex:2; background-color: cornflowerblue; display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <input type="text" id="comment" placeholder="comment here" style=" width: 500px; height: 40px;">
+            </div>
+            <div>
+                <button id="cmt1" style="height: 30px; width: 100px;" onclick="comment()">
+                    Comment
+                </button>
+            </div>
+
+        </div>
+        <div style="flex:1; background-color: rgb(235, 111, 66); ">
+
+            <button id="like" onclick="like()">
+                Like
+            </button>
+            <button id="dislike" onclick="dislike()">
+                Dislike
+            </button>
+
+        </div>
+
+        <div style="flex:4; background-color: darkkhaki;">
+            <div id="cmtdiv">
+                <div id="placeComment">
+                    Place the value
+                </div>
+                <div>
+                    last comment
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
