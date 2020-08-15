@@ -1,0 +1,131 @@
+Assignment day-4 :-
+----------------------------------------------------------------------------------------------------------------------
+<!--HTML FILE-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--Inline HTML and JS-->
+
+<body>
+    <button onclick="alert('Hello Welcom');">Click Me</button>
+</body>
+
+</html>
+
+----------------------------------------------------------------------------------------------------------------------
+<!--HTML FILE-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function internalstyling() {
+            alert('Hello Weclome to Internal Styling');
+        }
+    </Script>
+</head>
+
+<body>
+    <button onclick="internalstyling()"> Click me Internal Styling</button>
+
+    <div style="border: 2px solid black;display: flex;
+         font-weight: bold; font-stretch: ultra-expanded;
+        background-color:gray;width:10rem;margin-top: 20px;" onclick="internalstyling()">
+        <label>click here</label>
+
+
+    </div>
+
+
+</html>
+----------------------------------------------------------------------------------------------------------------------
+<!--HTML FILE-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="p3.js">
+
+    </script>
+</head>
+
+<body>
+    <button id="b2" onclick="extfun();">Click for External Styling </button>
+
+    <button class="btn" id="b2" onclick="extfun()">
+        CLICK ME External Demo
+    </button>
+</body>
+
+</html>
+<!--CSS FILE-->
+function extfun() {
+    alert('Hello welcome to External Styling');
+}
+----------------------------------------------------------------------------------------------------------------------
+<!--HTML FILE-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="p4.js">
+    </script>
+    <style>
+        html,
+        body {
+            background: green;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div style="display:flex;flex-direction: column;align-items: center;justify-content: center;height: 100vh;">
+        <div id="counterid" style="font-size: 32vh;">
+            1
+        </div>
+        <div>
+            <button style="padding:10px;font-size: 3vh;" onclick="Increment()">
+                Increment
+            </button>
+            <button style="padding:10px;font-size: 3vh;" onclick="Decrement()">
+                Decrement
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
+<!--CSS FILE-->>
+let counter = 1;
+
+function Increment() {
+    let counterEle = document.querySelector("#counterid");
+    for (i = 0; i <= 5; i++) {
+        counter = counter + 1;
+    }
+    counterEle.innerHTML = counter;
+}
+
+function Decrement() {
+    let counterEle = document.querySelector('#counterid');
+    if (counterEle.innerHTML > 100) {
+        counter = counter - 1;
+    }
+    counterEle.innerHTML = counter;
+}
