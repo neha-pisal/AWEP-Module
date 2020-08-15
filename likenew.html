@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+
+    <script src="likeNew.js"></script>
+</head>
+
+<body>
+    <div>
+        Like Here <br>
+        <button id="div1" class="btn bg-primary m-1 btn-outline-secondary text-light" onclick="like1()">
+            Like
+        </button>
+        <div id="div2" style="color: black; font-weight: bold; margin: 5px;">
+            likes
+        </div>
+        <div style="display: flex; ">
+            <input type="text" id="inputId" class="form-control m-1" placeholder="comment here" style="width: 300px;"
+                required>
+            <button id="cmtfbutton" class="btn bg-primary m-1 btn-outline-secondary text-light" onclick="commentHere()">
+                Comment
+            </button>
+        </div>
+
+        <div id="commentBox">
+            <div id="refCommentId"
+                style="display: flex; justify-content: space-between; margin: 5px; visibility: hidden; ">
+                <div> Sample comment Here </div>
+                <button class="btn bg-primary m-1 text-light btn-outline-secondary" onclick="deleteComment(this)">
+                    delete
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
